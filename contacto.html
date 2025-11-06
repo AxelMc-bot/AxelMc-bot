@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Data-Dyne Systems S.A.</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <style>
+        /* Estilos del Header */
+        .navbar-nav .nav-link {
+            transition: color 0.3s ease;
+        }
+        .navbar-nav .nav-link:hover,
+        .navbar-nav .nav-link:focus {
+            color: #ffffff !important;
+        }
+        .btn-warning:hover {
+            background-color: #ff9900 !important;
+            color: #212529 !important;
+        }
+        .logo-compacto {
+            line-height: 1.2;
+        }
+        /* Estilos para el Formulario en el tema Oscuro */
+        .form-control, .form-select {
+            background-color: #212529 !important; /* Fondo gris oscuro */
+            border-color: #495057 !important; /* Borde gris */
+            color: #f8f9fa !important; /* Texto blanco claro */
+        }
+        .form-control:focus {
+            border-color: #ffc107 !important; /* Borde naranja al enfocar */
+            box-shadow: 0 0 0 0.25rem rgba(255, 193, 7, 0.25) !important; /* Sombra naranja */
+        }
+    </style>
+</head>
+<body class="bg-black"> <header class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
+        <div class="container">
+            <a class="navbar-brand logo-compacto" href="index.html">
+                <h1 class="h6 mb-0 text-warning text-uppercase fw-bold">Data-Dyne Systems S.A.</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-warning fw-bold fs-6 text-uppercase" href="index.html">INICIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-warning fw-bold fs-6 text-uppercase" href="acerca.html">QUIÉNES SOMOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-warning fw-bold fs-6 text-uppercase" href="servicios.html">SERVICIOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-warning fw-bold fs-6 text-uppercase" href="infraestructura.html">INFRAESTRUCTURA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-warning fw-bold fs-6 text-uppercase" href="organizacion.html">ORGANIZACIÓN</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-warning fw-bold fs-6 text-uppercase" href="seguridad.html">SEGURIDAD</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-warning fw-bold fs-6 text-uppercase" href="sustentabilidad.html">SOSTENIBILIDAD</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-warning fw-bold fs-6 text-uppercase" aria-current="page" href="contacto.html">CONTACTO</a>
+                    </li>
+                </ul>
+                <a href="contacto.html" class="btn btn-warning d-none d-lg-block text-dark fw-bold">Cotizar</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mt-4 mb-5 text-white">
+        
+        <section id="contacto-intro" class="p-4 bg-dark border-bottom border-warning text-center rounded shadow mb-4">
+            <h2 class="display-5 text-warning">Hablemos de su Proyecto</h2>
+            <p class="lead text-secondary">Nuestro equipo de consultoría está listo para diseñar la solución de Data Center perfecta para su empresa.</p>
+        </section>
+
+        <div class="row g-4">
+            
+            <div class="col-lg-7">
+                <h3 class="mb-4 text-warning">Solicitud de Cotización y Consulta</h3>
+                <div class="p-4 bg-dark rounded shadow-lg">
+                    <form action="#" method="POST">
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label text-secondary">Nombre Completo</label>
+                            <input type="text" class="form-control" id="nombre" name="nombre" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label text-secondary">Correo Electrónico</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="servicio" class="form-label text-secondary">Servicio de Interés</label>
+                            <select class="form-select" id="servicio" name="servicio" required>
+                                <option value="" selected disabled>Seleccione una opción</option>
+                                <option value="colocation">Colocation (Espacio en Rack)</option>
+                                <option value="cloud-privado">Cloud Privado / IaaS</option>
+                                <option value="drp-bcp">DRP / BCP (Continuidad de Negocio)</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensaje" class="form-label text-secondary">Mensaje / Detalle del Requerimiento</label>
+                            <textarea class="form-control" id="mensaje" name="mensaje" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-warning fw-bold w-100 mt-2">Enviar Solicitud</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="col-lg-5">
+                <h3 class="mb-4 text-warning">Información Directa</h3>
+                <div class="p-4 bg-dark rounded shadow-lg border-start border-warning border-4">
+                    
+                    <h5 class="text-white mb-3">Oficinas Corporativas</h5>
+                    <p class="text-secondary">Av. Tecnológica 1450, Piso 12.<br>
+                    Ciudad Digital, 72810, MX.</p>
+
+                    <h5 class="text-white mb-3 mt-4">Contacto Telefónico</h5>
+                    <p class="text-secondary">Ventas y Consultoría: <span class="text-warning">(+52) 55 1234 5678</span><br>
+                    Soporte 24/7 (Clientes): <span class="text-warning">(+52) 55 9876 5432</span></p>
+
+                    <h5 class="text-white mb-3 mt-4">Correo Electrónico</h5>
+                    <p class="text-secondary mb-0">General: info@data-dyne.com<br>
+                    Ventas: ventas@data-dyne.com</p>
+                </div>
+
+                <h3 class="mt-4 mb-3 text-warning">Ubicación Estratégica</h3>
+                <div class="ratio ratio-16x9">
+                    <div class="bg-secondary d-flex justify-content-center align-items-center rounded">
+                        <span class="text-white-50">Placeholder de Mapa (Google Maps Embed)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container text-center">
+            <p class="mb-2 text-warning">&copy; 2025 Data-Dyne Systems S.A. Todos los derechos reservados. | Cumplimiento TIER III & ISO 27001</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

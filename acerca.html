@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiénes Somos | Data-Dyne Systems S.A.</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <style>
+        /* Estilo base para todos los enlaces del navbar */
+        .navbar-nav .nav-link {
+            transition: color 0.3s ease; /* Suaviza la transición de color */
+        }
+        
+        /* Efecto HOVER: Cambia el texto naranja a blanco brillante al pasar el cursor */
+        .navbar-nav .nav-link:hover,
+        .navbar-nav .nav-link:focus {
+            color: #ffffff !important; /* !important asegura que sobrescriba el text-warning de Bootstrap */
+        }
+
+        /* Asegura que el botón de consultoría también tenga un efecto al pasar el cursor */
+        .btn-warning:hover {
+            background-color: #ff9900 !important; /* Un naranja más suave al pasar el cursor */
+            color: #212529 !important;
+        }
+        
+        /* Ajuste de Margen para el Título del Logo para compactar */
+        .logo-compacto {
+            line-height: 1.2;
+        }
+    </style>
+</head>
+<body class="bg-black"> <header class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
+        <div class="container">
+            <a class="navbar-brand logo-compacto" href="index.html">
+                <h1 class="h6 mb-0 text-warning text-uppercase fw-bold">Data-Dyne Systems S.A.</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-warning fw-bold fs-6 text-uppercase" href="index.html">INICIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-warning fw-bold fs-6 text-uppercase" aria-current="page" href="acerca.html">QUIÉNES SOMOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-warning fw-bold fs-6 text-uppercase" href="servicios.html">SERVICIOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-warning fw-bold fs-6 text-uppercase" href="infraestructura.html">INFRAESTRUCTURA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-warning fw-bold fs-6 text-uppercase" href="organizacion.html">ORGANIZACIÓN</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-warning fw-bold fs-6 text-uppercase" href="seguridad.html">SEGURIDAD</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-warning fw-bold fs-6 text-uppercase" href="sustentabilidad.html">SOSTENIBILIDAD</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-warning fw-bold fs-6 text-uppercase" href="contacto.html">CONTACTO</a>
+                    </li>
+                </ul>
+                <a href="contacto.html" class="btn btn-warning d-none d-lg-block text-dark fw-bold">Cotizar</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mt-4 mb-5 text-white">
+        
+        <section id="quienes-somos-intro" class="p-4 bg-dark border-bottom border-warning text-center rounded shadow mb-4">
+            <h2 class="display-5 text-warning">Data-Dyne Systems S.A.</h2>
+            <p class="lead text-secondary">Somos su socio tecnológico de confianza, dedicado a la excelencia operativa y la gestión proactiva de infraestructura crítica.</p>
+        </section>
+
+        <section id="mision-vision-valores" class="py-4 border-bottom border-secondary">
+            <h3 class="mb-4 text-warning text-center">Nuestros Principios Fundamentales</h3>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card h-100 shadow-lg border-warning bg-dark text-white">
+                        <div class="card-body">
+                            <h4 class="card-title text-warning">🎯 Misión</h4>
+                            <p class="card-text">Ser el socio tecnológico fundamental, proporcionando una infraestructura de clase mundial bajo estándares **TIER III** y **ISO 27001**, asegurando la continuidad del negocio con máxima eficiencia.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 shadow-lg border-warning bg-dark text-white">
+                        <div class="card-body">
+                            <h4 class="card-title text-warning">🔭 Visión</h4>
+                            <p class="card-text">Liderar la transformación digital en la región, siendo reconocidos como el Centro de Cómputo con el mejor índice de Eficiencia de Uso de Energía (**PUE**) para el año 2030.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 shadow-lg border-warning bg-dark text-white">
+                        <div class="card-body">
+                            <h4 class="card-title text-warning">✨ Valores</h4>
+                            <ul class="list-unstyled">
+                                <li>Confiabilidad (Redundancia N+1)</li>
+                                <li>Excelencia Operativa (Procesos ITIL)</li>
+                                <li>Innovación Sostenible (PUE bajo)</li>
+                                <li>Integridad (Transparencia en SLA)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="historia-contexto" class="py-4">
+            <h3 class="mb-4 text-warning text-center">Historia: El Nacimiento de la Precisión Digital</h3>
+            <p>Data-Dyne Systems S.A. fue concebida en 2018 para cerrar la brecha entre la infraestructura local y los estándares globales de los Centros de Cómputo (CC).</p>
+
+            <h4 class="mt-4 text-secondary">Hitos Clave en Nuestro Desarrollo:</h4>
+            <ol class="list-group list-group-numbered bg-dark">
+                <li class="list-group-item bg-dark text-white border-warning"><strong>2019:</strong> Planeación Estratégica: Se define la necesidad de infraestructura TIER III y mantenimiento concurrente.</li>
+                <li class="list-group-item bg-dark text-white border-warning"><strong>2020:</strong> Construcción e Implementación: Se integra el diseño de Pasillo Caliente/Frío y distribución de energía 2N.</li>
+                <li class="list-group-item bg-dark text-white border-warning"><strong>2021:</strong> Certificación Operacional: Obtención de la certificación ISO 27001 e inicio de operaciones bajo el marco de ITIL.</li>
+                <li class="list-group-item bg-dark text-white border-warning"><strong>Hoy:</strong> Consolidación como líder regional gracias a la baja métrica de PUE y la gestión DCIM.</li>
+            </ol>
+        </section>
+        
+    </main>
+
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container text-center">
+            <p class="mb-2 text-warning">&copy; 2025 Data-Dyne Systems S.A. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
